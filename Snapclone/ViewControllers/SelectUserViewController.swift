@@ -9,11 +9,15 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FirebaseAuth
 
 class SelectUserViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     var users : [User] = []
+    var imageURL = ""
+    var descrip = "" // equal to description of users choice
+    var uuid = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,5 +49,14 @@ class SelectUserViewController: UIViewController,UITableViewDataSource, UITableV
         cell.textLabel?.text = user.email
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = users[indexPath.row]
+        let snap = ["from":Auth.auth().currentUser!.email, "description":descrip, "imageURL":imageURL, "uuid":uuid]
+
+        Database.database().reference().child("Users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
+        
+        navigationController!.popToRootViewController(animated: true)
     }
 }

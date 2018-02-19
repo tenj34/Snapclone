@@ -6,10 +6,11 @@ target 'Snapclone' do
   use_frameworks!
 
   # Pods for Snapclone
-  pod 'Firebase/core'
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'SDWebImage'
 
 
 end
