@@ -14,6 +14,9 @@
 		463B73A2202A5BEB00757380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463B73A0202A5BEB00757380 /* LaunchScreen.storyboard */; };
 		46A8D56920366AF600F3BF4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A8D56820366AF600F3BF4D /* GoogleService-Info.plist */; };
 		46B35B862038B4FB0090ED99 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B35B852038B4FB0090ED99 /* SnapsViewController.swift */; };
+		46B35B882038BD350090ED99 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B35B872038BD350090ED99 /* PictureViewController.swift */; };
+		46B35B8A2038D3370090ED99 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B35B892038D3370090ED99 /* SelectUserViewController.swift */; };
+		46B35B8C203928AF0090ED99 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B35B8B203928AF0090ED99 /* user.swift */; };
 		67072AA950B7A0F73E27A20F /* Pods_Snapclone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131F6955A11F62EA4E6864BD /* Pods_Snapclone.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		463B73A3202A5BEB00757380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46A8D56820366AF600F3BF4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		46B35B852038B4FB0090ED99 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		46B35B872038BD350090ED99 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		46B35B892038D3370090ED99 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		46B35B8B203928AF0090ED99 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		9CED39F35E6070C34261327F /* Pods-Snapclone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapclone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapclone/Pods-Snapclone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,16 +88,35 @@
 		463B7396202A5BEB00757380 /* Snapclone */ = {
 			isa = PBXGroup;
 			children = (
-				46A8D56820366AF600F3BF4D /* GoogleService-Info.plist */,
+				46B35B8D203929150090ED99 /* ViewControllers */,
+				46B35B8E2039294C0090ED99 /* Models */,
 				463B7397202A5BEB00757380 /* AppDelegate.swift */,
-				463B7399202A5BEB00757380 /* SignInViewController.swift */,
-				46B35B852038B4FB0090ED99 /* SnapsViewController.swift */,
+				46A8D56820366AF600F3BF4D /* GoogleService-Info.plist */,
 				463B739B202A5BEB00757380 /* Main.storyboard */,
 				463B739E202A5BEB00757380 /* Assets.xcassets */,
 				463B73A0202A5BEB00757380 /* LaunchScreen.storyboard */,
 				463B73A3202A5BEB00757380 /* Info.plist */,
 			);
 			path = Snapclone;
+			sourceTree = "<group>";
+		};
+		46B35B8D203929150090ED99 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				46B35B872038BD350090ED99 /* PictureViewController.swift */,
+				46B35B892038D3370090ED99 /* SelectUserViewController.swift */,
+				463B7399202A5BEB00757380 /* SignInViewController.swift */,
+				46B35B852038B4FB0090ED99 /* SnapsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		46B35B8E2039294C0090ED99 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46B35B8B203928AF0090ED99 /* user.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +244,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				463B739A202A5BEB00757380 /* SignInViewController.swift in Sources */,
+				46B35B882038BD350090ED99 /* PictureViewController.swift in Sources */,
+				46B35B8C203928AF0090ED99 /* user.swift in Sources */,
+				46B35B8A2038D3370090ED99 /* SelectUserViewController.swift in Sources */,
 				463B7398202A5BEB00757380 /* AppDelegate.swift in Sources */,
 				46B35B862038B4FB0090ED99 /* SnapsViewController.swift in Sources */,
 			);
